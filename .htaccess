@@ -2,3 +2,7 @@ RewriteEngine On
 
 # Rediriger le répertoire /ancien-repertoire vers le nouveau domaine
 RewriteRule ^TPGIT-TP/(.*)$ https://fert13.github.io/Portfolio-tp-git/$1 [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([a-zA-Z0-9_-]+)$ /$1.html [L,QSA]
