@@ -127,6 +127,10 @@ button{
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 75% 100%, 50% 90%, 25% 100%, 0% 90%);
 }
 
+.forma{
+  display: none;
+}
+
 
 .other-hero {
   height: 100vh;
@@ -656,6 +660,13 @@ textarea {
 @media (max-width: 1100px) {
 .card {
   height: auto;
+}
+.forma{
+  display: block;
+}
+
+.formaInterets {
+  display: none;
 }
 .text-align
 {

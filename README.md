@@ -9,7 +9,7 @@ Ce portfolio est une vitrine qui présente :
 - Les projets sur lesquels j'ai travaillé.
 - Une section pour me contacter facilement.
 
-https://github.com/fert13/Portfolio
+https://fert13.github.io/Portfolio-tp-git/
 
 # Fonctionnalités
 - Design responsive : Adapté à toutes les tailles d’écran (mobile, tablette, desktop).
