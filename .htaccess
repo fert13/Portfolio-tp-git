@@ -3,16 +3,11 @@ RewriteEngine On
 # Rediriger le répertoire /TPGIT-TP vers le nouveau domaine
 RewriteRule ^TPGIT-TP/(.*)$ https://fert13.github.io/Portfolio-tp-git/$1 [L,R=301]
 
-# Supprimer l'extension .html des URLs
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [L]
-
-# Assurer que les URLs sans extension .html fonctionnent
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html [L]
+RewriteRule ^(.*)$ $1.html
 
 ErrorDocument 404 https://fert13.github.io/Portfolio-tp-git/errors/
-DirectoryIndex index.php index.html https://fert13.github.io/Portfolio-tp-git/errors/
+DirectoryIndex index.html https://fert13.github.io/Portfolio-tp-git/errors/
+
+Options -Indexes
