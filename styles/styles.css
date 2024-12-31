@@ -709,7 +709,8 @@ textarea {
 
 
 form {
-  width: 500px;
+  width: 400px;
+  margin: 10px;
 }
 .hero{
   clip-path: none;
