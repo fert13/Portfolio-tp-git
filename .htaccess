@@ -14,4 +14,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
 
-ErrorDocument 404 /errors/
+ErrorDocument 404 index.html https://fert13.github.io/Portfolio-tp-git/errors/
