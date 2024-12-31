@@ -1,0 +1,42 @@
+$n: 17; 
+
+.competences-utils {
+  --d: 5s; 
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  margin: 10px 0 10px 0;
+  -webkit-mask: linear-gradient(90deg, #0000, #000 10% 90%, #0000);
+}
+
+.competences-utils > .img {
+  width: 100%; 
+  animation: r var(--d) linear infinite;
+}
+
+.competences-utils.reverse > .img {
+    animation: r-reverse var(--d) linear infinite;
+  }
+
+@keyframes r {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes r-reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+ @media (max-width: 1100px){
+  .competences-utils{
+    display: none;
+  }
+ }
