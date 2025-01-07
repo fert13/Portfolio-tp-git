@@ -7,7 +7,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html
 
-ErrorDocument 404 https://fert13.github.io/Portfolio-tp-git/errors/
+ErrorDocument 404 /errors/index.html
 DirectoryIndex index.html https://fert13.github.io/Portfolio-tp-git/errors/
 
 Options -Indexes
