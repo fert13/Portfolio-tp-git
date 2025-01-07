@@ -1,12 +1,38 @@
+# RewriteEngine On
+
+# # Rediriger le répertoire /TPGIT-TP vers le nouveau domaine
+# RewriteRule ^TPGIT-TP/(.*)$ https://fert13.github.io/Portfolio-tp-git/$1 [L,R=301]
+
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME}.html -f
+# RewriteRule ^(.*)$ $1.html
+
+# ErrorDocument 404 /404.html
+
+# Options -Indexes
+
+# Configuration Apache pour la réécriture d'URLs et gestion des erreurs
+
+
 RewriteEngine On
 
-# Rediriger le répertoire /TPGIT-TP vers le nouveau domaine
-RewriteRule ^TPGIT-TP/(.*)$ https://fert13.github.io/Portfolio-tp-git/$1 [L,R=301]
 
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.html [L]
+
 
 ErrorDocument 404 /404.html
 
 Options -Indexes
+
+# Sécurité : Empêcher l'accès direct aux fichiers PHP
+<FilesMatch "\.php$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
