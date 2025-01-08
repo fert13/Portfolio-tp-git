@@ -388,6 +388,11 @@ a {
   text-align: center;
 }
 
+.entete-experience> .card {
+ overflow-x: hidden; 
+ overflow-y: scroll;
+}
+
 
 
 .competence-block {
