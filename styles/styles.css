@@ -153,7 +153,7 @@ button{
 
 h1{
     color: #780875;
-    font-size: 100px
+    font-size: 100px;
     font-family: 'Dynalight', 'sans-serif';
 }
 
@@ -405,7 +405,7 @@ a {
     box-shadow: 2px 0 2px 0 #5e5e5e;
     padding: 12px;
     width: 250px;
-    height: 800px;
+    height: 220px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
