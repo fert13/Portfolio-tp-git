@@ -539,6 +539,11 @@ gap:10px
   border-radius: 10px;
 }
 
+.card-auto {
+  height: auto;
+  padding: 20px 0 20px 0;
+}
+
 .card-image {
   width: 100%;
   height: 80%;
