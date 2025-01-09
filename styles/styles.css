@@ -280,7 +280,7 @@ a {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     margin: 30px;
     gap: 20px;
