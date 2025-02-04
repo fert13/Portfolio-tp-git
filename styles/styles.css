@@ -239,6 +239,14 @@ i {
     font-size: 80px;
 }
 
+.description-competences >div >p{
+  border: 1px solid #782575;
+  color: #782575;
+  border-radius:20px;
+  padding:0 10px 0 10px;
+  margin-bottom: 2px;
+}
+
 /* button, .button-competences{
     background-color: #ffb200;
     color: white;
@@ -269,10 +277,10 @@ a {
 }
 
 .containers {
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     margin: 30px;
     gap: 20px;
@@ -388,6 +396,45 @@ a {
   text-align: center;
 }
 
+.competence-block .card {
+  height: 270px;
+}
+.entete-experience > .card {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.entete-experience > .card::-webkit-scrollbar {
+  width: 10px; 
+  border-radius: 10px;
+}
+
+.entete-experience > .card::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.entete-experience > .card::-webkit-scrollbar-thumb {
+  background: linear-gradient(0.25turn, #ff8000, #780875, #de0fd8); 
+  border-radius: 10px; 
+}
+
+.entete-experience > .card::-webkit-scrollbar-thumb:hover {
+  background:linear-gradient(0.25turn, #ff8000, #780875, #de0fd8); 
+}
+
+.entete-experience > .card::-webkit-scrollbar-button {
+  display: none;
+}
+
+.entete-experience > .card {
+  scrollbar-width: thin; 
+  scrollbar-color: #780875 #f0f0f0; 
+}
+
+.entete-experience> .card ul li {
+  margin-bottom: 10px;
+ }
 
 
 .competence-block {
@@ -398,7 +445,6 @@ a {
     justify-items: center;
     gap: 10px;
 }
-
 
 .card {
     background-color: white;
@@ -475,6 +521,10 @@ gap:10px
     text-align: center;
 }
 
+.projetLink {
+  width: 100px;
+}
+
 .projets {
   display: flex;
   flex-direction: row;
@@ -485,9 +535,13 @@ gap:10px
   background-color: white;
   box-shadow: 2px 0 2px 0 #5e5e5e;
   padding: 0;
-  height: 250px;
+  height: auto;
   border-radius: 10px;
+}
 
+.card-auto {
+  height: auto;
+  padding: 20px 0 20px 0;
 }
 
 .card-image {
@@ -515,6 +569,7 @@ gap:10px
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 10px;
   padding: 2px;
 }
@@ -542,7 +597,7 @@ gap:10px
   padding: 12px;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 30px;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -552,9 +607,7 @@ gap:10px
 .projets-header li h2 b {
   filter: drop-shadow(5px 5px 2px gray);
   &:hover {
-    border: 1px solid #782575;
     padding: 2px 10px 2px 10px;
-    border-radius: 20px;
     cursor: pointer;
   }
 }
@@ -692,9 +745,11 @@ textarea {
 
 }
 
-.description-competences p, .objectifs p {
+.description-competences div p, .objectifs p {
   text-align: center;
 }
+
+
 
 .projets{
   display: flex;

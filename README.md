@@ -28,7 +28,7 @@ Technologies utilisées
 
 
 # Installation
-git clone https://github.com/token@username/Recette_cosmopolitain.git
+git clone url
 
 git config --global user.name "username"
 

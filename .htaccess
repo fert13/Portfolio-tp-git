@@ -1,13 +1,11 @@
 RewriteEngine On
 
 # Rediriger le répertoire /TPGIT-TP vers le nouveau domaine
-RewriteRule ^TPGIT-TP/(.*)$ https://fert13.github.io/Portfolio-tp-git/$1 [L,R=301]
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html
 
-ErrorDocument 404 https://fert13.github.io/Portfolio-tp-git/errors/
-DirectoryIndex index.html https://fert13.github.io/Portfolio-tp-git/errors/
+ErrorDocument 404 /404.html
 
 Options -Indexes

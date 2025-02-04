@@ -1,8 +1,6 @@
 
 const projets = Array.from(document.getElementsByClassName('projets'));
-console.log(projets)
 const categories = document.querySelectorAll('.projets-header li');
-
 
 categories.forEach(category => {
   category.addEventListener('click', () => {
