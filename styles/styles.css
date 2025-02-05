@@ -29,7 +29,7 @@ nav {
     height: 100vh;
     color: white;
     right: 0;
-    position: fixed;
+    position: absolute
 }
 
 nav>ul {
