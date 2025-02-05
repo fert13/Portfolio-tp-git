@@ -276,8 +276,7 @@ a {
 #competences, #formations {
     background-color: #ecececa1;
     border-radius: 20px;
-    height:80vh;
-
+    height: 70vh;
 }
 
 
@@ -316,7 +315,7 @@ a {
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
-    height: 80vh;
+    height: 70vh;
 }
 
 .experience-line {
