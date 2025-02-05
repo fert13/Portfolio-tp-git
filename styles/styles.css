@@ -320,7 +320,10 @@ a {
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
-    height:100vh
+}
+
+#experiences {
+  height:100vh
 }
 
 .experience-line {
