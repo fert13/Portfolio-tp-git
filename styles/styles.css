@@ -280,10 +280,6 @@ a {
 
 }
 
-#formations {
-  height:auto
-}
-
 .competences {
     display: flex;
     flex-direction: column;
