@@ -296,7 +296,6 @@ a {
 
 .presentation, .row-grid{
     display: grid;
-    height: 100vh;
     grid-template-columns: 50% 50%;
     gap: 30px;
     padding:0 30px 0 30px;
@@ -320,10 +319,6 @@ a {
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
-}
-
-#experiences {
-  height:100vh
 }
 
 .experience-line {
