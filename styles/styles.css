@@ -247,19 +247,6 @@ i {
   margin-bottom: 2px;
 }
 
-/* button, .button-competences{
-    background-color: #ffb200;
-    color: white;
-    border:none;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top:15px;
-    cursor: pointer;
-    &:hover{
-      background-color: #ac7a07;
-      transform: translateY(-10px);
-    }
-} */
 .langue {
   background-color: #c568c2;
   padding: 5px 10px 5px 10px;
@@ -309,6 +296,7 @@ a {
 
 .presentation, .row-grid{
     display: grid;
+    height: 100vh;
     grid-template-columns: 50% 50%;
     gap: 30px;
     padding:0 30px 0 30px;
