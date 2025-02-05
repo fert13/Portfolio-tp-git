@@ -276,7 +276,11 @@ a {
 #competences, #formations {
     background-color: #ecececa1;
     border-radius: 20px;
-    height: 85vh;
+    height: 100vh;
+}
+
+#formations {
+  height: 70vh;
 }
 
 
