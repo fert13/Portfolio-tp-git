@@ -265,22 +265,24 @@ a {
 
 .containers {
     height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 30px;
     gap: 20px;
 }
 
-#competences, #formations {
+#competences {
     background-color: #ecececa1;
     border-radius: 20px;
-    height: 90vh;
+    height: 100vh;
 }
 
 #formations {
-  height: 70vh;
+  background-color: #ecececa1;
+  border-radius: 20px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -319,7 +321,7 @@ a {
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
-    height: 70vh;
+    height: 100vh
 }
 
 .experience-line {
@@ -703,7 +705,8 @@ textarea {
   height: auto;
 }
 .forma{
-  display: block;
+  display: flex;
+  text-align: center;
 }
 
 .formaInterets {
