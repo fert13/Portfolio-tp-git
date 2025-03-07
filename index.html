@@ -10,6 +10,7 @@
     <meta name="author" content="Néfertiti DADJO">
     <meta http-equiv="Content-Language" content="fr">
     <link rel="canonical" href="https://www.nefertiti.ovh/">
+    <link rel="manifest" href="manifest.json">
     
     <link rel="icon" type="image/png" href="images/declinaison.ico">
     <link rel="apple-touch-icon" href="images/declinaison.ico">
@@ -42,102 +43,41 @@
 </head>
 <body>
     <main>
-        <!-- <div class="hero">
-            <nav>
-                    <ul>
-                        <li><a href="#presentation" aria-label="Présentation">CV</a></li>
-                        <li><a href="portfolio" aria-label="Portfolio">Portfolio</a></li>
-                        <li><a href="contacts" aria-label="Contacts">Contact</a></li>
-                    </ul>
-            </nav>
-            <div class="hero-description">
-                 <h1>Néfertiti DADJO</h1>
-                 <h2> UX/UI designer et Développeuse front-end </h2>
-            </div>
-            <div>
-            </div>
-            <div class="hero-icon">
-                 <a href="#presentation" aria-label="Qui suis je">
-                    <i class="fa-solid fa-arrow-turn-down fa-2xl"></i></a>
-            </div>
-        </div> -->
-        <div class="hero">
-            <nav>
+        <div class="hero" itemscope itemtype="https://schema.org/CreativeWork">
+            <nav role="navigation" aria-label="Navigation principale">
                 <ul>
                     <li><a href="#presentation" aria-label="Aller à la section Présentation" aria-current="page">CV</a></li>
                     <li><a href="portfolio" aria-label="Aller au portfolio">Portfolio</a></li>
                     <li><a href="contacts" aria-label="Aller à la section Contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="hero-description">
-                <h1>Néfertiti DADJO</h1>
-                <h2>UX/UI designer et Développeuse front-end</h2>
+            <div class="hero-description" itemscope itemtype="https://schema.org/Description">
+                <h1 itemprop="name">Néfertiti DADJO</h1>
+                <h2 itemprop="jobTitle">UX/UI designer et Développeuse front-end</h2>
             </div>
             <div></div>
-            <div class="hero-icon">
+            <div class="hero-icon" aria-label="Naviguer vers la section Présentation">
                 <a href="#presentation" aria-label="Voir la section Présentation">
-                    <i class="fa-solid fa-arrow-turn-down fa-2xl" ></i>
+                    <i class="fa-solid fa-arrow-turn-down fa-2xl" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
         
-        <!-- <div class="containers" id="presentation">
-            <div class="presentation" >
-                <div class="description">
-                 <div class="description-items">
-                    <h2 class="bienvenu"><b>Hello, bienvenue sur mon profil !</b></h2>
-                    <div class="qui-suis-je">
-                        <h2 class="icon-title">
-                            <b>Présentation</b>
-                            <p class="competence-title"></p>
-                            <p class="competence-title"></p>
-                        </h2>
-                        <ul>
-                           <li><i class="fa-solid fa-user-graduate fa-md"></i><p>Je suis étudiante en Licence Professionnelle en Intégration et Webdesign à Eisine - URCA</p></li> 
-                           <li><i class="fa-solid fa-briefcase fa-md"></i><p>Avec deux solides années d'expériences en UX et développement Frontend</p></li> 
-                           <li><i class="fa-solid fa-magnifying-glass fa-md"></i><b style="font-weight: bold;">Actuellement à la recherche d'un stage de 3 à 6 mois dès Mars 2025</b></li>
-                           
-                        </ul>
-                    </div>
-                    <div class="objectifs">
-                        <h2 class="icon-title"><b>Mon objectif</b>
-                            <p class="competence-title"></p>
-                        </h2>
-                        <p>
-                            Etre capable de concevoir des applications web interactifs, de bout en bout et qui répondent à des problèmes cibles.
-                        </p>
-                    </div>
-                    <div class="row-flex">
-                        <button class="button-competences">
-                            <a href="#competences" aria-label="Compétences"> Découvrez mes compétences</a>
-                            <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
-                        </button>
-                        <button>
-                            <a href="images/Currivulum Vitae et Portfolio.pdf" aria-label="Curriculum vitae"> Télécharger mon CV </a>
-                            <i class="fa-solid fa-link fa-md" style="color: #ffffff;"></i>
-                        </button>
-                    </div>
-                 </div>
-                </div>
-                <div class="photo">
-                    <img src="images/image-background-2.svg" alt="Portfolio Néfertiti DADJO" width="150px" height="150px">
-                </div>
-            </div>
-        </div> -->
-        <div class="containers" id="presentation">
+
+        <div class="containers" id="presentation" itemscope itemtype="https://schema.org/Person">
             <div class="presentation">
                 <div class="description">
                     <div class="description-items">
-                        <h2 class="bienvenu"><b>Hello, bienvenue sur mon profil !</b></h2>
+                        <h2 class="bienvenu" itemprop="greeting"><b>Hello, bienvenue sur mon profil !</b></h2>
                         <div class="qui-suis-je">
-                            <h2 class="icon-title" id="presentation-title">
+                            <h2 class="icon-title" id="presentation-title" itemprop="name">
                                 <b>Présentation</b>
                                 <p class="competence-title"></p>
                                 <p class="competence-title"></p>
                             </h2>
                             <ul>
-                                <li><i class="fa-solid fa-user-graduate fa-md" aria-hidden="true"></i><p>Je suis étudiante en Licence Professionnelle en Intégration et Webdesign à Eisine - URCA</p></li> 
-                                <li><i class="fa-solid fa-briefcase fa-md" aria-hidden="true"></i><p>Avec deux solides années d'expériences en UX et développement Frontend</p></li> 
+                                <li><i class="fa-solid fa-user-graduate fa-md" aria-hidden="true"></i><p itemprop="alumniOf">Je suis étudiante en Licence Professionnelle en Intégration et Webdesign à Eisine - URCA</p></li> 
+                                <li><i class="fa-solid fa-briefcase fa-md" aria-hidden="true"></i><p>Avec deux solides années d'expérience en UX et développement Frontend</p></li> 
                                 <li><i class="fa-solid fa-magnifying-glass fa-md" aria-hidden="true"></i><b style="font-weight: bold;">Actuellement à la recherche d'un stage de 3 à 6 mois dès Mars 2025</b></li>
                             </ul>
                         </div>
@@ -145,488 +85,339 @@
                             <h2 class="icon-title" id="objectif-title"><b>Mon objectif</b>
                                 <p class="competence-title"></p>
                             </h2>
-                            <p>
-                                Etre capable de concevoir des applications web interactifs, de bout en bout et qui répondent à des problèmes cibles.
+                            <p itemprop="goal">
+                                Etre capable de concevoir des applications web interactives, de bout en bout et qui répondent à des problèmes cibles.
                             </p>
                         </div>
                         <div class="row-flex">
                             <button class="button-competences">
                                 <a href="#competences" aria-label="Aller à la section Compétences" aria-labelledby="presentation-title objectif-title">Découvrez mes compétences</a>
-                                <i class="fa-solid fa-arrow-right" style="color: #ffffff;" ></i>
+                                <i class="fa-solid fa-arrow-right" style="color: #ffffff;" aria-hidden="true"></i>
                             </button>
                             <button>
                                 <a href="images/Currivulum Vitae et Portfolio.pdf" aria-label="Télécharger mon Curriculum Vitae" download>
                                     Télécharger mon CV 
                                 </a>
-                                <i class="fa-solid fa-link fa-md" style="color: #ffffff;" ></i>
+                                <i class="fa-solid fa-link fa-md" style="color: #ffffff;" aria-hidden="true"></i>
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="photo">
-                    <img src="images/image-background-2.svg" alt="Portfolio de Néfertiti DADJO" width="150px" height="150px">
+                <div class="photo" itemscope itemtype="https://schema.org/ImageObject">
+                    <img src="images/image-background-2.svg" alt="Portfolio de Néfertiti DADJO" width="150px" height="150px" itemprop="contentUrl">
                 </div>
             </div>
         </div>
         
-        <!-- <div class="containers" id="competences">
-            <div class="competences" >
+        
+        <div class="containers" id="competences" itemscope itemtype="http://schema.org/Person">
+            <div class="competences">
                 <h2 class="bienvenu"><b>Mes compétences</b></h2>
                 <div class="competence-block">
-                    <div class="card">
-                        <div class="icon">
-                                        <i class="fa-solid fa-laptop fa-xl"></i>
-                                        <h2 class="icon-title">
-                                            <b>UX/UI design</b>
-                                            <p class="competence-title"></p>
-                                        </h2>
-                        </div>
-                        <div class="description-competences">
-                            <div>
-                                <p>Recherche utilisateur</p>
-                                <p>Création de personas</p> 
-                                <p>Parcours utilisateur </p>
-                                <p>Création de wireframes</p> 
-                                <p>Prototypages</p>
-                            </div>
-                        </div>
-                        <div>
-                            <button>
-                                <a href="portfolio" aria-label="Projets"> Voir projets </a>
-                                <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="icon">
-                                        <i class="fa-solid fa-code fa-xl"></i>
-                                        <h2 class="icon-title">
-                                            <b>Dev front-end</b>
-                                            <p class="competence-title"></p>
-                                        </h2>
-                        </div>
-                        <div class="description-competences">
-                            <div>
-                                <p>Développement de site internet</p>
-                                <p>Développement d'app web</p> 
-                                <p>Responsive Design</p>
-                                <p>Prototypage et intégration web</p>
-                                <p>Référencement SEO</p>
-                            </div>
-                        </div>
-                        <div>
-                            <button>
-                                <a href="portfolio" aria-label="Projets"> Voir projets </a>
-                                <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="icon">
-                                        <i class="fa-solid fa-pen-nib fa-xl"></i>
-                                        <h2 class="icon-title">
-                                            <b>Graphisme</b>
-                                            <p class="competence-title"></p>
-                                        </h2>
-                        </div>
-                        <div class="description-competences">
-                           <div>
-                                <p>Création d’identité visuelle</p>
-                                <p>Création de charte graphique</p>
-                                <p>Création de visuels et documents</p>
-                                <p>Utilisations de la suite Adobe</p>
-                                <p>Utilisation de Canva</p>
-                           </div>
-                        </div>
-                        <div>
-                            <button>
-                                <a href="portfolio" aria-label="Projets"> Voir projets </a>
-                                <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="icon">
-                                        <i class="fa-solid fa-list-check fa-xl"></i>
-                                        <h2 class="icon-title">
-                                            <b>Community Manager</b>
-                                            <p class="competence-title"></p>
-                                        </h2>
-                        </div>
-                        <div class="description-competences">
-                            <div>
-                                <p>Publications sur les réseaux sociaux</p>
-                                <p>Stratégie de développement</p>
-                                <p>Veille sociale</p>
-                                <p>Utilisation de Google Ads</p>
-                            </div>
-                        </div>
-                        <div>
-                            <button>
-                                <a href="portfolio" aria-label="Projets"> Voir projets </a>
-                                <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="competences-utils">
-                    <div class="img">
-                        <img class="utils" src="images/HTML5_logo_and_wordmark.svg.png" alt="competence" width="150px" height="150px">
-                    </div>
-                    <div class="img">
-                        <img class="utils" src="images/css3-logo-png-transparent.png" alt="competence" width="150px" height="150px">
-                    </div>
-                    <div class="img">
-                        <img class="utils" src="images/JavaScript-Symbol.png" alt="competence" width="150px" height="150px">
-                    </div>
-                    <div class="img">
-                        <img class="utils" src="images/php.png" alt="competence" width="150px" height="150px">
-                    </div>
-                    <div class="img">
-                        <img class="utils" src="images/Sql_data_base_with_logo.png" alt="competence" width="150px" height="150px">
-                    </div>
-                    <div class="img">
-                        <img class="utils" src="images/methode_agile.png" alt="competence" width="150px" height="150px">
-                    </div>
-                    <div class="img">
-                        <img class="utils" src="images/Bootstrap_logo.svg.png" alt="competence" width="150px" height="150px">
-                    </div>
-                    <div class="img">
-                        <img class="utils" src="images/nextjs-icon-512x309-yynfidez.png" alt="competence" width="150px" height="150px">
-                    </div>
-                    <div class="img">
-                        <img class="utils" src="images/o2switch-deployer-react.js.png" alt="competence" width="150px" height="150px">
-                    </div>
-                    <div class="img">
-                        <img class="utils" src="images/Vue.png" alt="competence" width="150px" height="150px">
-                    </div>
-                    <div class="img">
-                        <img class="utils" src="images/angular-icon-logo-5FC0C40EAC-seeklogo.com.png" alt="competence" width="150px" height="150px">
-                    </div>
-                    <div class="img">
-                        <img class="utils" src="images/figma-logo-0.png" alt="competence" width="150px" height="150px">
-                    </div>
-                    <div class="img">
-                        <img class="utils" src="images/miro-removebg-preview.png" alt="competence" width="150px" height="150px">
-                    </div>
-                    <div class="img">
-                        <img class="utils" src="images/woocommerce-logo-1024x260.png" alt="competence" width="150px" height="150px">
-                    </div>
-                    <div class="img">
-                        <img class="utils" src="images/Prestashop.svg.png" alt="competence" width="150px" height="150px">
-                    </div>
-                    <div class="img">
-                        <img class="utils" src="images/vecteezy_wordpress-logo-png-wordpress-icon-transparent-png_20975579.png" alt="competence" width="150px" height="150px">
-                    </div>
-                    <div class="img">
-                        <img class="utils" src="images/adobe-Illustrator-logo-0-1.png" alt="competence" width="150px" height="150px">
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div class="containers" id="competences">
-            <div class="competences" >
-                <h2 class="bienvenu"><b>Mes compétences</b></h2>
-                <div class="competence-block">
-                    <div class="card">
+                    <div class="card" itemscope itemtype="http://schema.org/CreativeWork">
                         <div class="icon" aria-labelledby="uxui-design-title">
                             <i class="fa-solid fa-laptop fa-xl" aria-hidden="true"></i>
-                            <h2 class="icon-title" id="uxui-design-title">
+                            <h2 class="icon-title" id="uxui-design-title" itemprop="name">
                                 <b>UX/UI design</b>
                             </h2>
                         </div>
-                        <div class="description-competences">
+                        <div class="description-competences" itemprop="description">
                             <div>
-                                <p>Recherche utilisateur</p>
-                                <p>Création de personas</p> 
-                                <p>Parcours utilisateur </p>
-                                <p>Création de wireframes</p> 
-                                <p>Prototypages</p>
+                                <p itemprop="skills">Recherche utilisateur</p>
+                                <p itemprop="skills">Création de personas</p>
+                                <p itemprop="skills">Parcours utilisateur</p>
+                                <p itemprop="skills">Création de wireframes</p>
+                                <p itemprop="skills">Prototypages</p>
                             </div>
                         </div>
                         <div>
                             <button>
-                                <a href="portfolio" aria-label="Voir les projets UX/UI design"> Voir projets </a>
-                                <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+                                <a href="portfolio" aria-label="Voir les projets UX/UI design" itemprop="url"> Voir projets </a>
+                                <i class="fa-solid fa-arrow-right" style="color: #ffffff;" aria-hidden="true"></i>
                             </button>
                         </div>
                     </div>
-                    <div class="card">
+        
+                    <div class="card" itemscope itemtype="http://schema.org/CreativeWork">
                         <div class="icon" aria-labelledby="frontend-dev-title">
                             <i class="fa-solid fa-code fa-xl" aria-hidden="true"></i>
-                            <h2 class="icon-title" id="frontend-dev-title">
+                            <h2 class="icon-title" id="frontend-dev-title" itemprop="name">
                                 <b>Dev front-end</b>
                             </h2>
                         </div>
-                        <div class="description-competences">
+                        <div class="description-competences" itemprop="description">
                             <div>
-                                <p>Développement de site internet</p>
-                                <p>Développement d'app web</p> 
-                                <p>Responsive Design</p>
-                                <p>Prototypage et intégration web</p>
-                                <p>Référencement SEO</p>
+                                <p itemprop="skills">Développement de site internet</p>
+                                <p itemprop="skills">Développement d'app web</p>
+                                <p itemprop="skills">Responsive Design</p>
+                                <p itemprop="skills">Prototypage et intégration web</p>
+                                <p itemprop="skills">Référencement SEO</p>
                             </div>
                         </div>
                         <div>
                             <button>
-                                <a href="portfolio" aria-label="Voir les projets Dev front-end"> Voir projets </a>
-                                <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+                                <a href="portfolio" aria-label="Voir les projets Dev front-end" itemprop="url"> Voir projets </a>
+                                <i class="fa-solid fa-arrow-right" style="color: #ffffff;" aria-hidden="true"></i>
                             </button>
                         </div>
                     </div>
-                    <div class="card">
+        
+                    <div class="card" itemscope itemtype="http://schema.org/CreativeWork">
                         <div class="icon" aria-labelledby="graphic-design-title">
                             <i class="fa-solid fa-pen-nib fa-xl" aria-hidden="true"></i>
-                            <h2 class="icon-title" id="graphic-design-title">
+                            <h2 class="icon-title" id="graphic-design-title" itemprop="name">
                                 <b>Graphisme</b>
                             </h2>
                         </div>
-                        <div class="description-competences">
-                           <div>
-                                <p>Création d’identité visuelle</p>
-                                <p>Création de charte graphique</p>
-                                <p>Création de visuels et documents</p>
-                                <p>Utilisations de la suite Adobe</p>
-                                <p>Utilisation de Canva</p>
-                           </div>
+                        <div class="description-competences" itemprop="description">
+                            <div>
+                                <p itemprop="skills">Création d’identité visuelle</p>
+                                <p itemprop="skills">Création de charte graphique</p>
+                                <p itemprop="skills">Création de visuels et documents</p>
+                                <p itemprop="skills">Utilisation de la suite Adobe</p>
+                                <p itemprop="skills">Utilisation de Canva</p>
+                            </div>
                         </div>
                         <div>
                             <button>
-                                <a href="portfolio" aria-label="Voir les projets Graphisme"> Voir projets </a>
-                                <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+                                <a href="portfolio" aria-label="Voir les projets Graphisme" itemprop="url"> Voir projets </a>
+                                <i class="fa-solid fa-arrow-right" style="color: #ffffff;" aria-hidden="true"></i>
                             </button>
                         </div>
                     </div>
-                    <div class="card">
+        
+                    <div class="card" itemscope itemtype="http://schema.org/CreativeWork">
                         <div class="icon" aria-labelledby="community-manager-title">
                             <i class="fa-solid fa-list-check fa-xl" aria-hidden="true"></i>
-                            <h2 class="icon-title" id="community-manager-title">
+                            <h2 class="icon-title" id="community-manager-title" itemprop="name">
                                 <b>Community Manager</b>
                             </h2>
                         </div>
-                        <div class="description-competences">
+                        <div class="description-competences" itemprop="description">
                             <div>
-                                <p>Publications sur les réseaux sociaux</p>
-                                <p>Stratégie de développement</p>
-                                <p>Veille sociale</p>
-                                <p>Utilisation de Google Ads</p>
+                                <p itemprop="skills">Publications sur les réseaux sociaux</p>
+                                <p itemprop="skills">Stratégie de développement</p>
+                                <p itemprop="skills">Veille sociale</p>
+                                <p itemprop="skills">Utilisation de Google Ads</p>
                             </div>
                         </div>
                         <div>
                             <button>
-                                <a href="portfolio" aria-label="Voir les projets Community Manager"> Voir projets </a>
-                                <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+                                <a href="portfolio" aria-label="Voir les projets Community Manager" itemprop="url"> Voir projets </a>
+                                <i class="fa-solid fa-arrow-right" style="color: #ffffff;" aria-hidden="true"></i>
                             </button>
                         </div>
                     </div>
                 </div>
+        
                 <div class="competences-utils">
-                    <div class="img" aria-labelledby="html5-logo">
-                        <img class="utils" src="images/HTML5_logo_and_wordmark.svg.png" alt="Logo HTML5" width="150px" height="150px">
+                    <div class="img" aria-labelledby="html5-logo" itemscope itemtype="http://schema.org/SoftwareApplication">
+                        <img class="utils" src="images/HTML5_logo_and_wordmark.svg.png" alt="Logo HTML5" width="150px" height="150px" itemprop="softwareVersion">
                     </div>
-                    <div class="img" aria-labelledby="css3-logo">
-                        <img class="utils" src="images/css3-logo-png-transparent.png" alt="Logo CSS3" width="150px" height="150px">
+                    <div class="img" aria-labelledby="css3-logo" itemscope itemtype="http://schema.org/SoftwareApplication">
+                        <img class="utils" src="images/css3-logo-png-transparent.png" alt="Logo CSS3" width="150px" height="150px" itemprop="softwareVersion">
                     </div>
-                    <div class="img" aria-labelledby="js-logo">
-                        <img class="utils" src="images/JavaScript-Symbol.png" alt="Logo JavaScript" width="150px" height="150px">
+                    <div class="img" aria-labelledby="js-logo" itemscope itemtype="http://schema.org/SoftwareApplication">
+                        <img class="utils" src="images/JavaScript-Symbol.png" alt="Logo JavaScript" width="150px" height="150px" itemprop="softwareVersion">
                     </div>
-                    <div class="img" aria-labelledby="php-logo">
-                        <img class="utils" src="images/php.png" alt="Logo PHP" width="150px" height="150px">
+                    <div class="img" aria-labelledby="php-logo" itemscope itemtype="http://schema.org/SoftwareApplication">
+                        <img class="utils" src="images/php.png" alt="Logo PHP" width="150px" height="150px" itemprop="softwareVersion">
                     </div>
-                    <div class="img" aria-labelledby="sql-logo">
-                        <img class="utils" src="images/Sql_data_base_with_logo.png" alt="Logo SQL" width="150px" height="150px">
+                    <div class="img" aria-labelledby="sql-logo" itemscope itemtype="http://schema.org/SoftwareApplication">
+                        <img class="utils" src="images/Sql_data_base_with_logo.png" alt="Logo SQL" width="150px" height="150px" itemprop="softwareVersion">
                     </div>
-                    <div class="img" aria-labelledby="agile-logo">
-                        <img class="utils" src="images/methode_agile.png" alt="Méthode Agile" width="150px" height="150px">
+                    <div class="img" aria-labelledby="agile-logo" itemscope itemtype="http://schema.org/SoftwareApplication">
+                        <img class="utils" src="images/methode_agile.png" alt="Méthode Agile" width="150px" height="150px" itemprop="softwareVersion">
                     </div>
-                    <div class="img" aria-labelledby="bootstrap-logo">
-                        <img class="utils" src="images/Bootstrap_logo.svg.png" alt="Logo Bootstrap" width="150px" height="150px">
+                    <div class="img" aria-labelledby="bootstrap-logo" itemscope itemtype="http://schema.org/SoftwareApplication">
+                        <img class="utils" src="images/Bootstrap_logo.svg.png" alt="Logo Bootstrap" width="150px" height="150px" itemprop="softwareVersion">
                     </div>
-                    <div class="img" aria-labelledby="nextjs-logo">
-                        <img class="utils" src="images/nextjs-icon-512x309-yynfidez.png" alt="Logo Next.js" width="150px" height="150px">
+                    <div class="img" aria-labelledby="nextjs-logo" itemscope itemtype="http://schema.org/SoftwareApplication">
+                        <img class="utils" src="images/nextjs-icon-512x309-yynfidez.png" alt="Logo Next.js" width="150px" height="150px" itemprop="softwareVersion">
                     </div>
-                    <div class="img" aria-labelledby="react-logo">
-                        <img class="utils" src="images/o2switch-deployer-react.js.png" alt="Logo React.js" width="150px" height="150px">
+                    <div class="img" aria-labelledby="react-logo" itemscope itemtype="http://schema.org/SoftwareApplication">
+                        <img class="utils" src="images/o2switch-deployer-react.js.png" alt="Logo React.js" width="150px" height="150px" itemprop="softwareVersion">
                     </div>
-                    <div class="img" aria-labelledby="vue-logo">
-                        <img class="utils" src="images/Vue.png" alt="Logo Vue.js" width="150px" height="150px">
+                    <div class="img" aria-labelledby="vue-logo" itemscope itemtype="http://schema.org/SoftwareApplication">
+                        <img class="utils" src="images/Vue.png" alt="Logo Vue.js" width="150px" height="150px" itemprop="softwareVersion">
                     </div>
-                    <div class="img" aria-labelledby="angular-logo">
-                        <img class="utils" src="images/angular-icon-logo-5FC0C40EAC-seeklogo.com.png" alt="Logo Angular" width="150px" height="150px">
+                    <div class="img" aria-labelledby="angular-logo" itemscope itemtype="http://schema.org/SoftwareApplication">
+                        <img class="utils" src="images/angular-icon-logo-5FC0C40EAC-seeklogo.com.png" alt="Logo Angular" width="150px" height="150px" itemprop="softwareVersion">
                     </div>
-                    <div class="img" aria-labelledby="figma-logo">
-                        <img class="utils" src="images/figma-logo-0.png" alt="Logo Figma" width="150px" height="150px">
+                    <div class="img" aria-labelledby="figma-logo" itemscope itemtype="http://schema.org/SoftwareApplication">
+                        <img class="utils" src="images/figma-logo-0.png" alt="Logo Figma" width="150px" height="150px" itemprop="softwareVersion">
                     </div>
-                    <div class="img" aria-labelledby="miro-logo">
-                        <img class="utils" src="images/miro-removebg-preview.png" alt="Logo Miro" width="150px" height="150px">
+                    <div class="img" aria-labelledby="miro-logo" itemscope itemtype="http://schema.org/SoftwareApplication">
+                        <img class="utils" src="images/miro-removebg-preview.png" alt="Logo Miro" width="150px" height="150px" itemprop="softwareVersion">
                     </div>
-                    <div class="img" aria-labelledby="woocommerce-logo">
-                        <img class="utils" src="images/woocommerce-logo-1024x260.png" alt="Logo WooCommerce" width="150px" height="150px">
+                    <div class="img" aria-labelledby="woocommerce-logo" itemscope itemtype="http://schema.org/SoftwareApplication">
+                        <img class="utils" src="images/woocommerce-logo-1024x260.png" alt="Logo WooCommerce" width="150px" height="150px" itemprop="softwareVersion">
                     </div>
-                    <div class="img" aria-labelledby="prestashop-logo">
-                        <img class="utils" src="images/Prestashop.svg.png" alt="Logo PrestaShop" width="150px" height="150px">
+                    <div class="img" aria-labelledby="prestashop-logo" itemscope itemtype="http://schema.org/SoftwareApplication">
+                        <img class="utils" src="images/Prestashop.svg.png" alt="Logo PrestaShop" width="150px" height="150px" itemprop="softwareVersion">
                     </div>
-                    <div class="img" aria-labelledby="wordpress-logo">
-                        <img class="utils" src="images/vecteezy_wordpress-logo-png-wordpress-icon-transparent-png_20975579.png" alt="Logo WordPress" width="150px" height="150px">
+                    <div class="img" aria-labelledby="wordpress-logo" itemscope itemtype="http://schema.org/SoftwareApplication">
+                        <img class="utils" src="images/vecteezy_wordpress-logo-png-wordpress-icon-transparent-png_20975579.png" alt="Logo WordPress" width="150px" height="150px" itemprop="softwareVersion">
                     </div>
-                    <div class="img" aria-labelledby="illustrator-logo">
-                        <img class="utils" src="images/adobe-Illustrator-logo-0-1.png" alt="Logo Illustrator" width="150px" height="150px">
+                    <div class="img" aria-labelledby="illustrator-logo" itemscope itemtype="http://schema.org/SoftwareApplication">
+                        <img class="utils" src="images/adobe-Illustrator-logo-0-1.png" alt="Logo Illustrator" width="150px" height="150px" itemprop="softwareVersion">
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="containers" id="experiences">
+        
+        <div class="containers" id="experiences" itemscope itemtype="http://schema.org/Person">
             <div class="experiences">
-                <div class="experience">
-                    <h2 class="bienvenu"><b>Mon parcours</b></h2>
-                    <div class="experience-line-bottom">
-                        
-                        <!-- Expérience 1 -->
-                        <div class="entete-experience">
-                            <div class="entete-experience-title">
-                                <h2 class="year">Déc.23 - Aou.24 (09 mois)</h2>
-                                <h2 class="icon-title"><b>Développeur Front-end/ UI Designer</b></h2>
-                            </div>
-                            <hr class="liaison">
-                            <img src="/images/fasfox.png" alt="Logo FASFOX" width="150px" height="150px">
-                            <h2>FASFOX</h2>
-                            <div class="card">
-                                <ul>
-                                    <li>Conception et développement d'interfaces utilisateurs responsives avec NextJs, ReactJS, Tailwindcss.</li>
-                                    <li>Recherche utilisateur et création de maquettes et prototypes interactifs avec Figma pour des projets web.</li>
-                                    <li>Manipulation des données avec une API Restful.</li>
-                                    <li>Rédaction de la documentation technique de support.</li>
-                                    <li>Collaboration avec une équipe de développement de 09 personnes pour l'intégration de nouvelles fonctionnalités et travail en gestion agile.</li>
-                                    <li>Tests et QA des fonctionnalités des applications développées.</li>
-                                </ul>
-                            </div>
-                        </div>
+                <h2 class="bienvenu" itemprop="jobTitle"><b>Mon parcours</b></h2>
+                <div class="experience-line-bottom">
         
-                        <!-- Expérience 2 -->
-                        <div class="entete-experience">
-                            <div class="entete-experience-title">
-                                <h2 class="year">Aou.22 - Sept.23 (13 mois)</h2>
-                                <h2 class="icon-title"><b>Développeur Front-end</b></h2>
-                            </div>
-                            <hr class="liaison">
-                            <img src="/images/inawo.png" alt="Logo INAWO" width="150px" height="150px">
-                            <h2>INAWO</h2>
-                            <div class="card">
-                                <ul>
-                                    <li>Conception et développement d'interfaces utilisateurs responsives avec ReactJS et Tailwindcss.</li>
-                                    <li>Manipulation des données avec une API Restful construite sous Django.</li>
-                                    <li>Collaboration avec une équipe de développement de 05 personnes pour l'intégration de nouvelles fonctionnalités et travail en gestion agile.</li>
-                                    <li>Conception des sites web dynamiques avec WordPress, Bootstrap, Tailwindcss, PHP.</li>
-                                    <li>Rédaction de la documentation technique de support.</li>
-                                    <li>Tests et QA des fonctionnalités des applications développées.</li>
-                                </ul>
-                            </div>
+                    <!-- Expérience 1 -->
+                    <div class="entete-experience" itemscope itemtype="http://schema.org/Occupation">
+                        <div class="entete-experience-title">
+                            <h2 class="year" itemprop="startDate" content="2023-12">Déc.23 - Aou.24 (09 mois)</h2>
+                            <h2 class="icon-title"><b itemprop="name">Développeur Front-end / UI Designer</b></h2>
                         </div>
-        
-                        <!-- Expérience 3 -->
-                        <div class="entete-experience">
-                            <div class="entete-experience-title">
-                                <h2 class="year">Sept.21 - Jan.22 (05 mois)</h2>
-                                <h2 class="icon-title"><b>Testeur QA</b></h2>
-                            </div>
-                            <hr class="liaison">
-                            <img src="/images/faconsulting.png" alt="Logo FA CONSULTING" width="150px" height="150px">
-                            <h2>FA CONSULTING</h2>
-                            <div class="card">
-                                <ul>
-                                    <li>Création de maquettes et prototypes web avec Figma.</li>
-                                    <li>Participation à un travail d'équipe avec trois développeurs pour l’ajout de nouvelles fonctionnalités dans un cadre agile.</li>
-                                    <li>Rédaction de documents techniques et réalisation de tests pour garantir la qualité des fonctionnalités implémentées.</li>
-                                </ul>
-                            </div>
+                        <hr class="liaison">
+                        <img src="/images/fasfox.png" alt="Logo FASFOX" width="150px" height="150px" itemprop="logo">
+                        <h2 itemprop="affiliation" class="company-name">FASFOX</h2>
+                        <div class="card" itemscope itemprop="responsibilities" itemtype="http://schema.org/ItemList">
+                            <ul>
+                                <li itemprop="itemListElement">Conception et développement d'interfaces utilisateurs responsives avec NextJs, ReactJS, Tailwindcss.</li>
+                                <li itemprop="itemListElement">Recherche utilisateur et création de maquettes et prototypes interactifs avec Figma pour des projets web.</li>
+                                <li itemprop="itemListElement">Manipulation des données avec une API Restful.</li>
+                                <li itemprop="itemListElement">Rédaction de la documentation technique de support.</li>
+                                <li itemprop="itemListElement">Collaboration avec une équipe de développement de 09 personnes pour l'intégration de nouvelles fonctionnalités et travail en gestion agile.</li>
+                                <li itemprop="itemListElement">Tests et QA des fonctionnalités des applications développées.</li>
+                            </ul>
                         </div>
-        
-                        <!-- Expérience 4 -->
-                        <div class="entete-experience">
-                            <div class="entete-experience-title">
-                                <h2 class="year">Oct.20 - Aou.21 (11 mois)</h2>
-                                <h2 class="icon-title"><b>Assistante en informatique</b></h2>
-                            </div>
-                            <hr class="liaison">
-                            <img src="/images/topformation.png" alt="Logo TOP BUSINESS ET CONSEILS" width="150px" height="150px">
-                            <h2>TOP BUSINESS ET CONSEILS</h2>
-                            <div class="card">
-                                <ul>
-                                    <li>Accueil et réception des clients.</li>
-                                    <li>Support informatique, analyse des besoins et recommandations en solutions informatiques.</li>
-                                    <li>Formation des utilisateurs sur les outils informatiques de l'entreprise.</li>
-                                </ul>
-                            </div>
-                        </div>
-        
                     </div>
+        
+                    <!-- Expérience 2 -->
+                    <div class="entete-experience" itemscope itemtype="http://schema.org/Occupation">
+                        <div class="entete-experience-title">
+                            <h2 class="year" itemprop="startDate" content="2022-08">Aou.22 - Sept.23 (13 mois)</h2>
+                            <h2 class="icon-title"><b itemprop="name">Développeur Front-end</b></h2>
+                        </div>
+                        <hr class="liaison">
+                        <img src="/images/inawo.png" alt="Logo INAWO" width="150px" height="150px" itemprop="logo">
+                        <h2 itemprop="affiliation" class="company-name">INAWO</h2>
+                        <div class="card" itemscope itemprop="responsibilities" itemtype="http://schema.org/ItemList">
+                            <ul>
+                                <li itemprop="itemListElement">Conception et développement d'interfaces utilisateurs responsives avec ReactJS et Tailwindcss.</li>
+                                <li itemprop="itemListElement">Manipulation des données avec une API Restful construite sous Django.</li>
+                                <li itemprop="itemListElement">Collaboration avec une équipe de développement de 05 personnes pour l'intégration de nouvelles fonctionnalités et travail en gestion agile.</li>
+                                <li itemprop="itemListElement">Conception des sites web dynamiques avec WordPress, Bootstrap, Tailwindcss, PHP.</li>
+                                <li itemprop="itemListElement">Rédaction de la documentation technique de support.</li>
+                                <li itemprop="itemListElement">Tests et QA des fonctionnalités des applications développées.</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- Expérience 3 -->
+                    <div class="entete-experience" itemscope itemtype="http://schema.org/Occupation">
+                        <div class="entete-experience-title">
+                            <h2 class="year" itemprop="startDate" content="2021-09">Sept.21 - Jan.22 (05 mois)</h2>
+                            <h2 class="icon-title"><b itemprop="name">Testeur QA</b></h2>
+                        </div>
+                        <hr class="liaison">
+                        <img src="/images/faconsulting.png" alt="Logo FA CONSULTING" width="150px" height="150px" itemprop="logo">
+                        <h2 itemprop="affiliation" class="company-name">FA CONSULTING</h2>
+                        <div class="card" itemscope itemprop="responsibilities" itemtype="http://schema.org/ItemList">
+                            <ul>
+                                <li itemprop="itemListElement">Création de maquettes et prototypes web avec Figma.</li>
+                                <li itemprop="itemListElement">Participation à un travail d'équipe avec trois développeurs pour l’ajout de nouvelles fonctionnalités dans un cadre agile.</li>
+                                <li itemprop="itemListElement">Rédaction de documents techniques et réalisation de tests pour garantir la qualité des fonctionnalités implémentées.</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- Expérience 4 -->
+                    <div class="entete-experience" itemscope itemtype="http://schema.org/Occupation">
+                        <div class="entete-experience-title">
+                            <h2 class="year" itemprop="startDate" content="2020-10">Oct.20 - Aou.21 (11 mois)</h2>
+                            <h2 class="icon-title"><b itemprop="name">Assistante en informatique</b></h2>
+                        </div>
+                        <hr class="liaison">
+                        <img src="/images/topformation.png" alt="Logo TOP BUSINESS ET CONSEILS" width="150px" height="150px" itemprop="logo">
+                        <h2 itemprop="affiliation" class="company-name">TOP BUSINESS ET CONSEILS</h2>
+                        <div class="card" itemscope itemprop="responsibilities" itemtype="http://schema.org/ItemList">
+                            <ul>
+                                <li itemprop="itemListElement">Accueil et réception des clients.</li>
+                                <li itemprop="itemListElement">Support informatique, analyse des besoins et recommandations en solutions informatiques.</li>
+                                <li itemprop="itemListElement">Formation des utilisateurs sur les outils informatiques de l'entreprise.</li>
+                            </ul>
+                        </div>
+                    </div>
+        
                 </div>
             </div>
         </div>
-        <div class="containers" id="formations">
-            <h2 class="bienvenu formaInterets"><b>Formations et Intérêts</b></h2>
-            
+        
+        <div class="containers" id="formations" itemscope itemtype="http://schema.org/Person">
+            <h2 class="bienvenu formaInterets" itemprop="jobTitle"><b>Formations et Intérêts</b></h2>
+        
             <!-- Formations -->
             <h2 class="bienvenu forma"><b>Formations</b></h2>
-            <div class="formations">
+            <div class="formations" itemscope itemtype="http://schema.org/EducationOccupationalOccupationalOccupationalOccupational">
                 <div class="formation-list">
+                    
                     <!-- Formation 1 -->
-                    <div class="formation">
+                    <div class="formation" itemscope itemtype="http://schema.org/EducationalOccupationalOccupational">
                         <div class="title entete-experience">
-                            <img src="images/eisine.png" alt="Logo École d'Ingénieurs en Sciences Industrielles et Numérique - Eisine" width="150px" height="150px">
-                            <h2 class="year icon-title text-align">École d'Ingénieurs en Sciences Industrielles et Numérique - Eisine</h2>
+                            <img src="images/eisine.png" alt="Logo École d'Ingénieurs en Sciences Industrielles et Numérique - Eisine" width="150px" height="150px" itemprop="logo">
+                            <h2 class="year icon-title text-align" itemprop="name">École d'Ingénieurs en Sciences Industrielles et Numérique - Eisine</h2>
                         </div>
                         <div>
-                            <p class="text-align">Licence professionnelle Métiers du numérique : conception, rédaction et réalisation web</p>
+                            <p class="text-align" itemprop="degree">Licence professionnelle Métiers du numérique : conception, rédaction et réalisation web</p>
                         </div>
                     </div>
         
                     <!-- Formation 2 -->
-                    <div class="formation">
+                    <div class="formation" itemscope itemtype="http://schema.org/EducationalOccupationalOccupational">
                         <div class="title entete-experience">
-                            <img src="images/images-removebg-preview (1).png" alt="Logo Institut Universitaire de Technologie Industrielle de Lokossa" width="150px" height="150px">
-                            <h2 class="year text-align">Institut Universitaire de Technologie Industrielle de Lokossa</h2>
+                            <img src="images/images-removebg-preview (1).png" alt="Logo Institut Universitaire de Technologie Industrielle de Lokossa" width="150px" height="150px" itemprop="logo">
+                            <h2 class="year text-align" itemprop="name">Institut Universitaire de Technologie Industrielle de Lokossa</h2>
                         </div>
                         <div>
-                            <p class="text-align">Licence Génie Electrique et Informatique Industrielle</p>
+                            <p class="text-align" itemprop="degree">Licence Génie Electrique et Informatique Industrielle</p>
                         </div>
                     </div>
                 </div>
         
-                <!-- Intérêts -->
-                <h2 class="bienvenu forma"><b>Intérêts</b></h2>
-                <div class="interet-list">
-                    <div class="row interet">
-                        <div class="row">
-                            <i class="fa-solid fa-plane fa-xl"></i><p>Voyages</p>
-                        </div>
-                        <div class="row">
-                            <i class="fa-solid fa-pen-nib fa-xl"></i><p>Art dessin</p>
-                        </div>
-                        <div class="row">
-                            <i class="fa-solid fa-code fa-xl"></i><p>Codage</p>
-                        </div>
-                        <div class="row">
-                            <i class="fa-solid fa-music fa-xl"></i><p>Musique</p>
-                        </div>
-                        <div class="row">
-                            <i class="fa-solid fa-film fa-xl"></i><p>Séries</p>
-                        </div>
+            <!-- Intérêts -->
+            <h2 class="bienvenu forma"><b>Intérêts</b></h2>
+            <div class="interet-list" itemscope itemtype="http://schema.org/Person">
+                <div class="row interet" itemscope itemtype="http://schema.org/CreativeWork">
+                    <div class="row">
+                        <i class="fa-solid fa-plane fa-xl" itemprop="genre"></i><p itemprop="keywords">Voyages</p>
                     </div>
+                    <div class="row">
+                        <i class="fa-solid fa-pen-nib fa-xl" itemprop="genre"></i><p itemprop="keywords">Art dessin</p>
+                    </div>
+                    <div class="row">
+                        <i class="fa-solid fa-code fa-xl" itemprop="genre"></i><p itemprop="keywords">Codage</p>
+                    </div>
+                    <div class="row">
+                        <i class="fa-solid fa-music fa-xl" itemprop="genre"></i><p itemprop="keywords">Musique</p>
+                    </div>
+                    <div class="row">
+                        <i class="fa-solid fa-film fa-xl" itemprop="genre"></i><p itemprop="keywords">Séries</p>
+                    </div>
+                </div>
         
-                    <!-- Langues -->
-                    <div class="row interet">
-                        <div class="row">
-                            <i class="fa-solid fa-language fa-xl"></i><p>Français : oral et écrit</p>
-                        </div>
-                        <div class="row">
-                            <i class="fa-solid fa-language fa-xl"></i><p>Anglais : écrit</p>
-                        </div>
+                <!-- Langues -->
+                <div class="row interet" itemscope itemtype="http://schema.org/Language">
+                    <div class="row">
+                        <i class="fa-solid fa-language fa-xl" itemprop="language"></i><p itemprop="name">Français : oral et écrit</p>
+                    </div>
+                    <div class="row">
+                        <i class="fa-solid fa-language fa-xl" itemprop="language"></i><p itemprop="name">Anglais : écrit</p>
                     </div>
                 </div>
             </div>
         </div>
+        
         
     </main>   
 </body>
