@@ -2,7 +2,7 @@
     "name": "NEFERTITI PORTFOLIO",
     "short_name": "NEFERTITI",
     "description": "PORTFOLIO NEFERTITI - WEBDESIGNER | DEVELOPPEUR WEB",
-    "start_url": "/",
+    "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
