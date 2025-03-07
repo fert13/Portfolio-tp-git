@@ -6,14 +6,29 @@
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
+    "orientation": "portrait-primary",
+    "screenshots": [
+      {
+        "src": "/images/512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "form_factor": "wide"
+      },
+      {
+        "src": "/images/76.png",
+        "sizes": "76x76",
+        "type": "image/png",
+        "form_factor": "phone"
+      }
+    ],
     "icons": [
       {
-        "src": "/icons/icon-192x192.png",
-        "sizes": "192x192",
+        "src": "/images/76.png",
+        "sizes": "76x76",
         "type": "image/png"
       },
       {
-        "src": "/icons/icon-512x512.png",
+        "src": "/images/512.png",
         "sizes": "512x512",
         "type": "image/png"
       }
