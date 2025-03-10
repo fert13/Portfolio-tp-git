@@ -8,7 +8,7 @@ const urlsToCache = [
   '/scss/style.scss',
   '.htaccess',
   '404.html',
-  '/contacts.html',
+  '/contacts.php',
   '/portfolio.html',
   '/js/index.js',
   '/images/image-background-2.svg',
