@@ -60,11 +60,40 @@
         <div class="containers" id="contacts">
         
         <div class="column-flex">
-              <form action="traitement.php" method="POST">
+                <?php
+                    try {
+                        $pdo = new PDO("mysql:host=10.56.8.55;dbname=messagerie", "dadj0002", "VfM5Bg48N0");
+                        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                    } catch (PDOException $e) {
+                        die("Erreur de connexion : " . $e->getMessage());
+                    }
+
+                    if (isset($_POST['submit'])) {
+                        $nom = trim(htmlspecialchars($_POST["name"]));
+                        $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+                        $message = trim(htmlspecialchars($_POST["message"]));
+                        $nom = ucfirst($nom);
+                        $message = ucfirst($message);
+                        $statut= 0;
+                        
+                        if(isset($nom) && isset($email) && isset($message)){
+                            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                                echo "<p style='color:red; text-align:center'>Le format de l'email est invalide.</p>";
+                            }else {
+                                $sql = "INSERT INTO messages (nom, email, message, statut) VALUES (?, ?, ?, ?)";
+                                $stmt = $pdo->prepare($sql);
+                                $stmt->execute([$nom, $email, $message, $statut]);  
+                            }
+                        }else {
+                            echo "<p style='color:red; text-align:center'>Remplir tous les champs</p>";
+                        }
+                    } 
+                ?>
+              <form action ="" method="POST">
                 <input name="name" type="text" placeholder="Nom" class="feedback-input" required />
                 <input name="email" type="email" placeholder="Email" class="feedback-input" required />
                 <textarea name="message" placeholder="Message" class="feedback-input" required></textarea>
-                <input type="submit" value="Envoyer"/>
+                <input type="submit" name="submit" value="Envoyer"/>
             </form>
               <div class="row-flex contact-icons">
                 <div class="row-flex"><i class="fa-solid fa-envelope fa-xl"></i> <h2>ghislainedadjo@gmail.com</h2></div>
@@ -79,3 +108,6 @@
 
 </body>
 </html>
+
+
+
