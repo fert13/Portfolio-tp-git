@@ -59,7 +59,7 @@ nav>ul>li{
     width: 100px;
     height: auto;
     padding: 20px;
-    background-color: #782575;
+    background: linear-gradient(0.25turn, #780875, #de0fd8);
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     display: flex;
@@ -89,7 +89,7 @@ button{
     width: auto;
     height: auto;
     padding: 5px 12px;
-    background: linear-gradient(0.25turn, #780875, #ff8000, #de0fd8);
+    background: linear-gradient(0.25turn, #780875, #de0fd8);
     border-radius: 50px;
     display: flex;
     flex-direction: row;
@@ -245,6 +245,10 @@ i {
   border-radius:20px;
   padding:0 10px 0 10px;
   margin-bottom: 2px;
+  &:hover {
+    border: 1.5px solid #782575;
+    margin-bottom: 3px
+  }
 }
 
 .langue {
@@ -270,13 +274,13 @@ a {
 }
 
 #competences {
-    background-color: #ecececa1;
+    background: linear-gradient(to bottom , #ecececa1, #eedbdba1);
     border-radius: 20px;
     height: 100vh;
 }
 
 #formations {
-  background-color: #ecececa1;
+  background: linear-gradient(to bottom , #ecececa1, #eedbdba1);
   border-radius: 20px;
   height: 80vh;
   display: flex;
@@ -321,7 +325,8 @@ a {
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
-    height: 100vh
+    height: 100vh;
+    width:auto;
 }
 
 .experience-line {
@@ -405,12 +410,12 @@ a {
 }
 
 .entete-experience > .card::-webkit-scrollbar-thumb {
-  background: linear-gradient(0.25turn, #ff8000, #780875, #de0fd8); 
+  background: linear-gradient(0.25turn, #780875, #de0fd8); 
   border-radius: 10px; 
 }
 
 .entete-experience > .card::-webkit-scrollbar-thumb:hover {
-  background:linear-gradient(0.25turn, #ff8000, #780875, #de0fd8); 
+  background:linear-gradient(0.25turn, #780875, #de0fd8);
 }
 
 .entete-experience > .card::-webkit-scrollbar-button {
@@ -448,6 +453,11 @@ a {
     justify-items: center;
     align-items: center;
     gap: 10px;
+    box-shadow:2px 2px 8px #782575;
+    &:hover {
+      box-shadow:2px 2px 12px #782575;
+      transform: translateY(-10px);
+    }
 }
 
 .icon{
@@ -698,6 +708,167 @@ textarea {
     transform: translateX(-10px);
   }
 }
+
+/* Style général */
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+}
+
+
+.entry-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.entry-date {
+  font-size: 22px;
+  color: #780875;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.entry-logo {
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.company-name p {
+  font-size: 19px;
+  font-weight: bold;
+  border : 1px solid #782575;
+  color: #782575;
+  width: 80px; 
+  border-radius: 20px;
+  text-align: center;
+  background-color: #78257549;
+}
+
+
+/* Animation de fade */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Style des éléments avant que l'animation commence */
+.timeline-entry {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  position: relative;
+  padding: 25px;
+  margin-bottom: 50px;
+  background: linear-gradient(0.25turn, #ecececa1, #e7c5c5a1);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  opacity: 0; 
+  transition: opacity 1s ease-out; 
+}
+
+/* Application de l'animation une fois l'élément visible à l'écran */
+.timeline-entry.visible {
+  opacity: 1;
+  animation: fadeIn 1s ease-out forwards;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+/* Pour chaque élément avec un délai d'animation progressif */
+.timeline-entry:nth-child(odd) {
+  align-self: flex-start;
+  text-align: left;
+  animation-delay: 0.3s; /* Délai pour les éléments impairs */
+}
+
+.timeline-entry:nth-child(even) {
+  align-self: flex-end;
+  text-align: right;
+  animation-delay: 0.5s; /* Délai pour les éléments pairs */
+}
+
+/* Point sur la timeline */
+.timeline-entry::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 100%;
+  width: 22px;
+  height: 22px;
+  background-color: #780875;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 10px #c568c2;
+}
+
+.timeline-entry:nth-child(even)::before {
+  left: -30px;
+}
+
+
+
+/* Optionnel : si tu veux ajouter une animation de la ligne de la timeline */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  width: 5px;
+  background-color: #782575;
+  top: 120px;
+  bottom: 120px;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.timeline-text {
+  margin-bottom: 50px;
+}
+
+
+/* Responsivité */
+@media (max-width: 768px) {
+  .timeline-line {
+    display: none;
+  }
+
+  /* Alignement des cartes (en mode vertical) */
+  .timeline-container {
+    padding: 20px;
+  }
+
+  .timeline-entry {
+    width: 100%; /* Les cartes occupent toute la largeur */
+    margin-bottom: 30px; /* Espacement entre les cartes */
+  }
+
+  /* Point sur la timeline (masquer sur mobile) */
+  .timeline-entry::before {
+    display: none;
+  }
+
+  /* Ajouter un espacement entre les cartes */
+  .timeline-entry.visible {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-title {
+    font-size: 24px;
+  }
+}
+
+
 
 @media (max-width: 1100px) {
 .card {

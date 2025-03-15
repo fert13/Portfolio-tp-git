@@ -23,6 +23,29 @@ categories.forEach(category => {
   });
 });
 
+// Créer une instance d'IntersectionObserver
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          // Ajouter la classe 'visible' pour activer l'animation de fade
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // Arrêter l'observation une fois l'élément visible
+      }
+  });
+}, {
+  threshold: 0.5 // L'élément doit être à 50% visible pour que l'animation soit déclenchée
+});
+
+// Sélectionner toutes les timeline-entry et commencer l'observation
+const timelineEntries = document.querySelectorAll('.timeline-entry');
+timelineEntries.forEach(entry => {
+  observer.observe(entry);
+});
+
+
+
+
+
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js').then((registration) => {
