@@ -57,192 +57,243 @@
             </div>
         </div>
         <div class="containers" id="projets">
-            <ul class="projets-header">
-                <li id="tout"><h2><b>Tout</b> </p></h2></li>
-                <li id="webdesign"> <h2 class="icon-title"><b>Webdesign</b><p class="competence-title projetLink"></p></h2> </li>
-                <!-- <li id="graphisme"> <h2 class="icon-title"><b>Graphisme</b><p class="competence-title projetLink"></p></h2> </li> -->
-                <li id="programmation"> <h2 class="icon-title"><b>Programmation</b><p class="competence-title projetLink"></p></h2> </li>
-                <!-- <li id="community"> <h2 class="icon-title"><b>Community Manager</b><p class="competence-title projetLink"></p></h2></li> -->
-            </ul>
-            
-            <div class="projets-container" id="tout">
-                <div class="projets webdesign">
-                    <div class="card-image" >
-                        <img src="images/Detail produit prototype.png" alt="">
-                    </div>
-                    <div class="card-title">
-                        <h2><b>Boutique minimaliste</b></h2>
-                        <p><strong>T-Fashion</strong> est une boutique en ligne permettant de vendre des ensembles pour la famille. Elle est composée d’une page d’Accueil présentant la boutique et d’une page de détail produit permettant de visualiser et de sélectionner un produit.</p>
-                        <ul>
-                            <li><strong>Tâches</strong></li>
-                            <li>Réalisation de la benchmark produit avec figjam</li>
-                            <li> Création du sitemap</li>
-                            <li>Création des wireframes</li>
-                        </ul>
-                        <div class="row-flex">
-                            <img src="images/figma-logo-0.png" alt="" class="utils">
-                        </div>
-                        <div>
-                            <button class="button-competences"> <a href="https://www.figma.com/proto/oDoiffTjOT8M6n6ML2C8mi/Boutique-minimaliste?node-id=29-3630&t=Yp8sQ2X1tuMtZXd9-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">Voir en détail</a> </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="projets webdesign">
-                    <div class="card-image">
-                        <img src="images/Makover.jpg" alt="">
-                    </div>
-                    <div class="card-title">
-                        <h2><b>Landing page </b></h2>
-                        <p><strong>Makover</strong> est un studio de communication digitale qui offre des services en développement web, en
-                            référencement seo et en photographie.
-                            Nous avons fait le design de leur siteweb mettant l’accent sur leurs réalisations et présentant leurs
-                            services.
-                            </p>
+            <div class="projets-layout">
+                <div class="filters-sidebar">
+                    <h3>Filtres</h3>
+                    <div class="filter-categories">
+                        <div class="filter-group">
+                            <h4>Catégories</h4>
                             <ul>
-                                <li><strong>Tâches</strong></li>
-                                <li>Création d'une identité visuelle</li>
-                                <li>Charte graphique</li>
-                                <li>Wireframing et Prototypages</li>
+                                <li class="filter-item active" data-category="tout">
+                                    <i class="fa-solid fa-th-large"></i>
+                                    <span>Tous les projets</span>
+                                </li>
+                                <li class="filter-item" data-category="webdesign">
+                                    <i class="fa-solid fa-paint-brush"></i>
+                                    <span>Web Design</span>
+                                </li>
+                                <li class="filter-item" data-category="programmation">
+                                    <i class="fa-solid fa-code"></i>
+                                    <span>Programmation</span>
+                                </li>
+                                <li class="filter-item" data-category="gestion">
+                                    <i class="fa-solid fa-diagram-project"></i>
+                                    <span>Gestion de projets</span>
+                                </li>
+                                <li class="filter-item" data-category="integration">
+                                    <i class="fa-solid fa-file-code"></i>
+                                    <span>Intégration web</span>
+                                </li>
+                                <li class="filter-item" data-category="community">
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>Community Manager</span>
+                                </li>
                             </ul>
-                            <div>
-                                <img src="images/figma-logo-0.png" alt="" class="utils">
+                        </div>
+                        <div class="filter-group">
+                            <h4>Technologies</h4>
+                            <ul>
+                                <li class="filter-item" data-tech="react">
+                                    <i class="fa-brands fa-react"></i>
+                                    <span>React</span>
+                                </li>
+                                <li class="filter-item" data-tech="nextjs">
+                                    <i class="fa-brands fa-node-js"></i>
+                                    <span>Next.js</span>
+                                </li>
+                                <li class="filter-item" data-tech="figma">
+                                    <i class="fa-brands fa-figma"></i>
+                                    <span>Figma</span>
+                                </li>
+                                <li class="filter-item" data-tech="wordpress">
+                                    <i class="fa-brands fa-wordpress"></i>
+                                    <span>WordPress</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="projets-content">
+                    <div class="projets-header">
+                        <h2>Mes Projets</h2>
+                        <div class="search-bar">
+                            <i class="fa-solid fa-search"></i>
+                            <input type="text" placeholder="Rechercher un projet...">
+                        </div>
+                    </div>
+                    <div class="projets-container" id="tout">
+                        <div class="projets webdesign">
+                            <div class="card-image" >
+                                <img src="images/Detail produit prototype.png" alt="">
                             </div>
-                        <div>
-                            <button class="button-competences"> <a href="https://www.figma.com/proto/3cpm61CZzULZpj4np7hQ32/Makover_siteweb?node-id=1-2&p=f&t=Zp6TiYqHMivnJ68U-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2">Voir en détail</a> </button>
+                            <div class="card-title">
+                                <h2><b>Boutique minimaliste</b></h2>
+                                <p><strong>T-Fashion</strong> est une boutique en ligne permettant de vendre des ensembles pour la famille. Elle est composée d'une page d'Accueil présentant la boutique et d'une page de détail produit permettant de visualiser et de sélectionner un produit.</p>
+                                <ul>
+                                    <li><strong>Tâches</strong></li>
+                                    <li>Réalisation de la benchmark produit avec figjam</li>
+                                    <li> Création du sitemap</li>
+                                    <li>Création des wireframes</li>
+                                </ul>
+                                <div class="row-flex">
+                                    <img src="images/figma-logo-0.png" alt="" class="utils">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="projets webdesign">
-                    <div class="card-image" >
-                        <img src="images/Codes en Ardennes.png" alt="">
-                    </div>
-                    <div class="card-title">
-                        <h2><b>Code en Ardennes </b></h2>
-                        <p>
-                          <strong>Code en Ardennes</strong> est un site web fictif pour présenter un hackathon. L’objectif est de permettre à
-                          l’utilisateur de visualiser le programme, de s’inscrire et d’avoir toutes les informations concernant
-                          l’évènement.
-                          Pour cela, nous avons créé une page d’Accueil pour présenter l’évènement, une page Programme
-                          pour présenter le programme, une page Inscription pour s’inscrire et une page Contact pour
-                          demander des informations supplémentaires
-                          </p>
-                          <ul>
-                              <li><strong>Tâches</strong></li>
-                              <li>
-                                  Réalisation de la benchmark produit avec figjam
-                              </li>
-                              <li>
-                                  Interview utilisateur
-                                  
-                              </li>
-                              <li>
-                                  Création de persona
-                                  
-                              </li>
-                              <li>
-                                  Création du sitemap
-                                  
-                              </li>
-                              <li>Création des wireframes</li>
-                          </ul>
-                          <div>
-                              <img src="images/figma-logo-0.png" alt="" class="utils">
-                          </div>
-                        <div>
-                            <button class="button-competences"> <a href="https://www.figma.com/proto/0iKkrmULebSNHGdjwcwkfw/Deezer-accueil-et-code-en-Ardennes?node-id=117-2127&t=63G3C9IyjBS9WX1S-1&scaling=min-zoom&content-scaling=fixed&page-id=1%3A2">Voir en détail</a> </button>
+                        <div class="projets webdesign">
+                            <div class="card-image">
+                                <img src="images/Makover.jpg" alt="">
+                            </div>
+                            <div class="card-title">
+                                <h2><b>Landing page </b></h2>
+                                <p><strong>Makover</strong> est un studio de communication digitale qui offre des services en développement web, en
+                                    référencement seo et en photographie.
+                                    Nous avons fait le design de leur siteweb mettant l'accent sur leurs réalisations et présentant leurs
+                                    services.
+                                    </p>
+                                    <ul>
+                                        <li><strong>Tâches</strong></li>
+                                        <li>Création d'une identité visuelle</li>
+                                        <li>Charte graphique</li>
+                                        <li>Wireframing et Prototypages</li>
+                                    </ul>
+                                    <div>
+                                        <img src="images/figma-logo-0.png" alt="" class="utils">
+                                    </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                        <div class="projets webdesign">
+                            <div class="card-image" >
+                                <img src="images/Codes en Ardennes.png" alt="">
+                            </div>
+                            <div class="card-title">
+                                <h2><b>Code en Ardennes </b></h2>
+                                <p>
+                                  <strong>Code en Ardennes</strong> est un site web fictif pour présenter un hackathon. L'objectif est de permettre à
+                                  l'utilisateur de visualiser le programme, de s'inscrire et d'avoir toutes les informations concernant
+                                  l'évènement.
+                                  Pour cela, nous avons créé une page d'Accueil pour présenter l'évènement, une page Programme
+                                  pour présenter le programme, une page Inscription pour s'inscrire et une page Contact pour
+                                  demander des informations supplémentaires
+                                  </p>
+                                  <ul>
+                                      <li><strong>Tâches</strong></li>
+                                      <li>
+                                          Réalisation de la benchmark produit avec figjam
+                                      </li>
+                                      <li>
+                                          Interview utilisateur
+                                          
+                                      </li>
+                                      <li>
+                                          Création de persona
+                                          
+                                      </li>
+                                      <li>
+                                          Création du sitemap
+                                          
+                                      </li>
+                                      <li>Création des wireframes</li>
+                                  </ul>
+                                  <div>
+                                      <img src="images/figma-logo-0.png" alt="" class="utils">
+                                  </div>
+                            </div>
+                        </div>
 
-                <div class="projets programmation card-auto">
-                <div class="card-image" >
-                    <img src="images/Staffdispatch.png" alt="">
-                </div>
-                <div class="card-title">
-                    <h2><b>Suite Dispatch</b></h2>
-                    <p> <strong>Suite Dispatch</strong> est une application de gestion du béton et du personnel en BTP. C’est un
-                        projet de l’entreprise FASFOX. Sur ce projet, nous avons participé à la création de nouvelles
-                        fonctionnalités sous la Suite Dispatch, un ensemble d’applications et logiciels pour le suivi du
-                        BTP utilisés par Léon Grosse, Eiffage et le Groupe NGE. Ce projet a été développé avec NextJs,
-                        tailwindCss.
-                        </p>
-                        <ul>
-                            <li><strong>Tâches</strong></li>
-                            <li>Création de marquettes sous Figma</li>
-                            <li>Création des composants réutilisables avec Nextjs et Tailwindcss et manipulation des données avec une API créée sous Django Rest Framework
-                            </li>
-                            <li>Création et manipulation d’un store rédux pour la gestion des états</li>
-                        </ul>
-                        <div>
-                            <img src="images/nextjs-icon-512x309-yynfidez.png" alt="" class="utils">
-                            <img src="images/tailwindcss_logo_icon_170649.png" alt="" class="utils">
+                        <div class="projets programmation card-auto">
+                        <div class="card-image" >
+                            <img src="images/Staffdispatch.png" alt="">
                         </div>
-                    <div>
-                        <button class="button-competences"> <a href="https://dash.concretedispatch.eu/auth/login?next=/dashboard">Voir en détail</a> </button>
-                    </div>
-                </div>
-                </div>
-                <div class="projets programmation card-auto">
-                    <div class="card-image" >
-                        <img src="images/crm.png" alt="">
-                    </div>
-                    <div class="card-title">
-                        <h2><b>InawoCRM</b></h2>
-                        <p> <strong>InawoCRM</strong> est une application de gestion de la relation client avec Reactjs dont les
-                            fonctionnalités développées sont le Dashboard, le Catalogue, l’Agenda, les Dépenses et les
-                            recettes.
-                            </p>
-    
-                            <ul>
-                                <li><strong>Tâches</strong></li>
-                                <li>Création de marquettes sous Figma</li>
-                                <li>Création des composants réutilisables avec ReactJS et TailwindCSS et manipulation des données avec une API créée sous Django Rest Framework
-                                </li>
-                                <li>Création et manipulation d’un store rédux pour la gestion des états</li>
-                                <li>Création de sites internet sous Wordpress</li>
-                                <li>Création de site internet avec TailwindCss et Bootstrap</li>
-                            </ul>
-                            <div>
-                                <img src="images/o2switch-deployer-react.js.png" alt="" class="utils">
-                                <img src="images/tailwindcss_logo_icon_170649.png" alt="" class="utils">
-                                <img src="images/Bootstrap_logo.svg.png" alt="" class="utils">
-                                <img src="images/vecteezy_wordpress-logo-png-wordpress-icon-transparent-png_20975579.png" alt="" class="utils">
+                        <div class="card-title">
+                            <h2><b>Suite Dispatch</b></h2>
+                            <p> <strong>Suite Dispatch</strong> est une application de gestion du béton et du personnel en BTP. C'est un
+                                projet de l'entreprise FASFOX. Sur ce projet, nous avons participé à la création de nouvelles
+                                fonctionnalités sous la Suite Dispatch, un ensemble d'applications et logiciels pour le suivi du
+                                BTP utilisés par Léon Grosse, Eiffage et le Groupe NGE. Ce projet a été développé avec NextJs,
+                                tailwindCss.
+                                </p>
+                                <ul>
+                                    <li><strong>Tâches</strong></li>
+                                    <li>Création de marquettes sous Figma</li>
+                                    <li>Création des composants réutilisables avec Nextjs et Tailwindcss et manipulation des données avec une API créée sous Django Rest Framework
+                                    </li>
+                                    <li>Création et manipulation d'un store rédux pour la gestion des états</li>
+                                </ul>
+                                <div>
+                                    <img src="images/nextjs-icon-512x309-yynfidez.png" alt="" class="utils">
+                                    <img src="images/tailwindcss_logo_icon_170649.png" alt="" class="utils">
+                                </div>
+                        </div>
+                        </div>
+                        <div class="projets programmation card-auto">
+                            <div class="card-image" >
+                                <img src="images/crm.png" alt="">
                             </div>
-                        <div>
-                            <button class="button-competences"> <a href="https://app.inawo.pro/fr/connexion">Voir en détail</a> </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="projets programmation card-auto">
-                    <div class="card-image" >
-                        <img src="images/Dépenses.png" alt="">
-                    </div>
-                    <div class="card-title">
-                        <h2><b>Application de gestion des dépenses</b></h2>
-                        <p> <strong>Application de gestion des dépenses</strong> L’objectif est de créer une application de gestion des dépenses permettent aux utilisateurs
-                            d’enregistrer leurs dépenses, de définir des budgets et de visualiser leurs habitudes de
-                            consommation à travers des rapports et des graphiques.
-                            </p>
-                            <ul>
-                                <li><strong>Tâches</strong></li>
-                                <li>Création de composants réutilisables avec Reactjs</li>
-                                <li>Manipulation de localStorage pour la gestion des états
-                                </li>
-                                <li>Utilisation de react ApexChart pour la création de graphique.</li>
-                            </ul>
-                            <div>
-                                <img src="images/o2switch-deployer-react.js.png" alt="" class="utils">
-                                <img src="images/tailwindcss_logo_icon_170649.png" alt="" class="utils">                            
+                            <div class="card-title">
+                                <h2><b>InawoCRM</b></h2>
+                                <p> <strong>InawoCRM</strong> est une application de gestion de la relation client avec Reactjs dont les
+                                    fonctionnalités développées sont le Dashboard, le Catalogue, l'Agenda, les Dépenses et les
+                                    recettes.
+                                    </p>
+        
+                                    <ul>
+                                        <li><strong>Tâches</strong></li>
+                                        <li>Création de marquettes sous Figma</li>
+                                        <li>Création des composants réutilisables avec ReactJS et TailwindCSS et manipulation des données avec une API créée sous Django Rest Framework
+                                        </li>
+                                        <li>Création et manipulation d'un store rédux pour la gestion des états</li>
+                                        <li>Création de sites internet sous Wordpress</li>
+                                        <li>Création de site internet avec TailwindCss et Bootstrap</li>
+                                    </ul>
+                                    <div>
+                                        <img src="images/o2switch-deployer-react.js.png" alt="" class="utils">
+                                        <img src="images/tailwindcss_logo_icon_170649.png" alt="" class="utils">
+                                        <img src="images/Bootstrap_logo.svg.png" alt="" class="utils">
+                                        <img src="images/vecteezy_wordpress-logo-png-wordpress-icon-transparent-png_20975579.png" alt="" class="utils">
+                                    </div>
                             </div>
-                        <div>
-                            <button class="button-competences"> <a href="https://gestion-depenses-gold.vercel.app/">Voir en détail</a> </button>
                         </div>
+                        <div class="projets programmation card-auto">
+                            <div class="card-image" >
+                                <img src="images/Dépenses.png" alt="">
+                            </div>
+                            <div class="card-title">
+                                <h2><b>Application de gestion des dépenses</b></h2>
+                                <p> <strong>Application de gestion des dépenses</strong> L'objectif est de créer une application de gestion des dépenses permettent aux utilisateurs
+                                    d'enregistrer leurs dépenses, de définir des budgets et de visualiser leurs habitudes de
+                                    consommation à travers des rapports et des graphiques.
+                                    </p>
+                                    <ul>
+                                        <li><strong>Tâches</strong></li>
+                                        <li>Création de composants réutilisables avec Reactjs</li>
+                                        <li>Manipulation de localStorage pour la gestion des états
+                                        </li>
+                                        <li>Utilisation de react ApexChart pour la création de graphique.</li>
+                                    </ul>
+                                    <div>
+                                        <img src="images/o2switch-deployer-react.js.png" alt="" class="utils">
+                                        <img src="images/tailwindcss_logo_icon_170649.png" alt="" class="utils">                            
+                                    </div>
+                            </div>
+                        </div>
+            
                     </div>
                 </div>
-    
             </div>
         </div>
     </main>
+    <footer style="
+        background: linear-gradient(135deg, #780875, #de0fd8);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+        font-size: 16px;
+        box-shadow: 0 -5px 20px rgba(120, 37, 117, 0.2);
+    ">
+        <p>© 2024 Néfertiti DADJO Portfolio. Tous droits réservés.</p>
+    </footer>
     <script src="js/index.js"></script>
 
 </body>
